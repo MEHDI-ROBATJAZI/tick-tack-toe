@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(168, 214, 255);
+}
+#board {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #999999;
+  cursor: pointer;
+}
+.cell {
+  width: 98px;
+  height: 98px;
+  border: 1px solid #999;
+  float: left;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 98px;
+}
+.cell:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.fill-x::after {
+  content: "X";
+  color: red;
+}
+.fill-o::after {
+  content: "O";
+  color: blue;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+#info {
+  text-align: left;
+  line-height: 98px;
+}
